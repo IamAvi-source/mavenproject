@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="testNGGroup2">
+	<test thread-count="5" name="testNGGroup2">
+		<groups>
+			<run>
+
+				<include name="chrome.Regression"></include>
+				<include name="firefox.Sanity"></include>
+				<include name="Boss"></include>
+
+			</run>
+
+
+		</groups>
+		<classes>
+			<class name="grouping.Group2" />
+			<class name="grouping.Group1" />
+		</classes>
+	</test> <!-- testNGGroup2 -->
+</suite> <!-- testNGGroup2 -->
